@@ -5,6 +5,7 @@
     <body>
         <a-scene>
             <a-assets>
+                {{/* beardo */}}
                 <a-asset-item
                     id="beardo-obj"
                     src="models/beardo.obj"
@@ -12,6 +13,16 @@
                 <a-asset-item
                     id="beardo-mtl"
                     src="models/beardo.mtl"
+                ></a-asset-item>
+
+                {{/* tree */}}
+                <a-asset-item
+                    id="tree-obj"
+                    src="models/tree.obj"
+                ></a-asset-item>
+                <a-asset-item
+                    id="tree-mtl"
+                    src="models/tree.mtl"
                 ></a-asset-item>
             </a-assets>
 
@@ -22,11 +33,18 @@
                 position="0 0 -7"
             ></a-obj-model>
 
+            <a-obj-model
+                src="#tree-obj"
+                mtl="#tree-mtl"
+                rotation="-90 180 0"
+                position="3 0 -7"
+            ></a-obj-model>
+
             <a-plane
-                position="0 0 -4"
+                position="0 0 0"
                 rotation="-90 0 0"
-                width="1000"
-                height="1000"
+                width="100"
+                height="50"
                 color="#348C31"
             ></a-plane>
             <a-sky color="#87cefa""></a-sky>
