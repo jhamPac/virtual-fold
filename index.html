@@ -24,8 +24,21 @@
                     id="tree-mtl"
                     src="models/tree.mtl"
                 ></a-asset-item>
+
+                <img id="jira" src="images/jira.png">
             </a-assets>
 
+            {{/* Landscape */}}
+            <a-sky color="#87cefa""></a-sky>
+            <a-plane
+                position="0 0 0"
+                rotation="-90 0 0"
+                width="100"
+                height="50"
+                color="#348C31"
+            ></a-plane>
+
+            {{/* characters */}}
             <a-obj-model
                 src="#beardo-obj"
                 mtl="#beardo-mtl"
@@ -40,14 +53,12 @@
                 position="3 0 -7"
             ></a-obj-model>
 
-            <a-plane
-                position="0 0 0"
-                rotation="-90 0 0"
-                width="100"
-                height="50"
-                color="#348C31"
-            ></a-plane>
-            <a-sky color="#87cefa""></a-sky>
+            <a-image
+                width="8" 
+                height="5"
+                position="25 2 -10" 
+                rotation="0 270 0" 
+                src="#jira"></a-image>
         </a-scene>
     </body>
 </html>
