@@ -15,6 +15,16 @@
                     src="models/beardo.mtl"
                 ></a-asset-item>
 
+                {{/* sports */}}
+                <a-asset-item
+                    id="sports-obj"
+                    src="models/sports1.obj"
+                ></a-asset-item>
+                <a-asset-item
+                    id="sports-mtl"
+                    src="models/sports1.mtl"
+                ></a-asset-item>
+
                 {{/* lady1 */}}
                 <a-asset-item
                     id="lady1-obj"
@@ -43,6 +53,16 @@
                 <a-asset-item
                     id="bench-mtl"
                     src="models/bench.mtl"
+                ></a-asset-item>
+
+                {{/* store */}}
+                <a-asset-item
+                    id="store-obj"
+                    src="models/scene_store.obj"
+                ></a-asset-item>
+                <a-asset-item
+                    id="store-mtl"
+                    src="models/store.mtl"
                 ></a-asset-item>
 
                 <img id="jira" src="images/jira.png">
@@ -76,10 +96,24 @@
             ></a-obj-model>
 
             <a-obj-model
+                src="#sports-obj"
+                mtl="#sports-mtl"
+                rotation="-90 -75 0"
+                position="35 0.40 -4"
+            ></a-obj-model>
+
+            <a-obj-model
                 src="#tree-obj"
                 mtl="#tree-mtl"
                 rotation="-90 180 0"
                 position="3 0 -7"
+            ></a-obj-model>
+
+            <a-obj-model
+                src="#store-obj"
+                mtl="#store-mtl"
+                rotation="-90 180 0"
+                position="-12 0 -9"
             ></a-obj-model>
 
             {{/* things - stuff */}}
